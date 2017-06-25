@@ -5,7 +5,7 @@ package com.ly;
  */
 public class JoinTest {
 
-
+//实现t1，t2，t3按照顺序执行
     public static void main(String args[]) throws InterruptedException {
 
         final Thread t1 = new Thread(new Runnable() {
