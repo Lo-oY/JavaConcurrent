@@ -117,6 +117,8 @@ class Searcher implements Runnable{
         try {
             cyclicBarrier.await();
             System.out.printf("%s  -------------------process End.\n",Thread. currentThread().getName());
+            cyclicBarrier.await();
+            System.out.println("--------------------second await----------------------------------");
 
         } catch (InterruptedException e) {
             e.printStackTrace();
